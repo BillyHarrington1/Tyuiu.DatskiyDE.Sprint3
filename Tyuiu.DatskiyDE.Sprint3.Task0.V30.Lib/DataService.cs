@@ -3,16 +3,19 @@ namespace Tyuiu.DatskiyDE.Sprint3.Task0.V30.Lib
 {
     public class DataService : ISprint3Task0V30
     {
-
         public double GetMultiplySeries(int startValue, int stopValue)
         {
-            double productSeries = 0;
+            double productSeries = 1.0;           
+            double sin1 = Math.Sin(1.0); 
+            double denominator = Math.Pow(sin1, -10);
+
             for (int i = startValue; i <= stopValue; i++)
             {
-                productSeries = (startValue / Math.Sin(Math.Pow(1, -10)));
+                productSeries *= i / denominator; 
             }
+
             return Math.Round(productSeries, 3);
         }
     }
 }
-    
+

@@ -35,7 +35,7 @@ namespace Tyuiu.DatskiyDE.Sprint3.Task4.V3
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            double result = ds.GetSumSeries(startValue, stopValue);
+            double result = ds.Calculate(startValue, stopValue);
             Console.WriteLine("Сумма значений функции: " + result);
 
             Console.ReadKey();

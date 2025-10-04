@@ -26,21 +26,21 @@ namespace Tyuiu.DatskiyDE.Sprint3.Task5.V24
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int startValueI = 1;
-            int stopValueI = 3;
-            int startValueK = 1;
-            int stopValueK = 12;
-            double x = 2.0;
+            int startValue1 = 1;
+            int stopValue1 = 3;
+            int startValue2 = 1;
+            int stopValue2 = 12;
+            int x = 2;
 
             Console.WriteLine("x = " + x);
-            Console.WriteLine("i от " + startValueI + " до " + stopValueI);
-            Console.WriteLine("k от " + startValueK + " до " + stopValueK);
+            Console.WriteLine("i от " + startValue1 + " до " + stopValue1);
+            Console.WriteLine("k от " + startValue2 + " до " + stopValue2);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            double result = ds.GetSumSeries(startValueI, stopValueI, startValueK, stopValueK, x);
+            double result = ds.GetSumSumSeries(x,startValue1, stopValue1, startValue2, stopValue2);
             Console.WriteLine("Значение y = " + result);
 
             Console.ReadKey();
